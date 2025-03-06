@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РЕШАЙся</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="time" style="font-weight: 900;">РЕШАЙся</span>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Найти">
+    </div>
+
+    <div class="nav-buttons">
+        <button class="active" data-category="sweet">#ДОНМ</button>
+        <button data-category="savory">#Движение первых</button>
+        <button data-category="coffee"><3</button>
+        <button data-category="bread">#TechZone</button>
+        <button data-category="tea">#1542</button>
+    </div>
+
+
+    <!-- Нижнее меню -->
+    <div class="footer">
+        <button class="nav-btn" data-target="settings">
+            <i class="fas fa-cog"></i> Настройки
+        </button>
+        <button class="nav-btn" data-target="video">
+            <img src = "assets/header_logo.jpg" class="fas fa-play-circle" id="d">
+        </button>
+        <button class="nav-btn" data-target="about">
+            <i class="fas fa-info-circle"></i> О нас
+        </button>
+    </div>
+
+    <div id="video" class="content" style="display: block;">
+        <div class="catalog-title">Наши выпуски :) </div>
+        <h1>Видеоролики</h1>
+    </div>
+
+    <div id="settings" class="content">
+        <div class="settings-container">
+            <h1>Настройки</h1>
+
+            <!-- Секция темы -->
+            <div class="settings-section">
+                <h2>Тема:</h2>
+                <label>
+                    <input type="checkbox" id="theme-toggle" style="font-weight: bold;"> Темная тема
+                </label>
+            </div>
+
+            <!-- Секция контактов -->
+            <div class="settings-section">
+                <h2>Контакты:</h2>
+                <ul class="contacts">
+                    <li><i class="fab fa-youtube"></i> Мы в ютуб: <a href="https://www.youtube.com/@reshaysya" target="_blank">https://www.youtube.com/@reshaysya</a></li>
+                    <li><i class="fab fa-telegram"></i> Наш телеграмм канал: <a href="https://t.me/reshaysyaa" target="_blank">@reshaysyaa</a></li>
+                    <li><i class="fas fa-envelope"></i> Наш Email для связи: <a href=" emelyanovaa@sch1542.r">emelyanovaa@sch1542.r</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="content">
+        <h1>«РЕШАЙся» — образовательный проект ГБОУ Школа №1542 для учеников, учителей и родителей. Подписывайся и решайся быть в команде профессионалов вместе с нами!</h1>
+        <p>РЕШАЙся ГБОУ №1542</p>
+    </div>
+
+
+    <script src = script.js></script>
+</body>
+</html>

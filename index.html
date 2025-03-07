@@ -4,73 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РЕШАЙся</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
     <div class="header">
-        <span class="time" style="font-weight: 900;">РЕШАЙся</span>
-    </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Найти">
-    </div>
-
-    <div class="nav-buttons">
-        <button class="active" data-category="sweet">#ДОНМ</button>
-        <button data-category="savory">#Движение первых</button>
-        <button data-category="coffee"><3</button>
-        <button data-category="bread">#TechZone</button>
-        <button data-category="tea">#1542</button>
-    </div>
-
-
-    <!-- Нижнее меню -->
-    <div class="footer">
-        <button class="nav-btn" data-target="settings">
-            <i class="fas fa-cog"></i> Настройки
-        </button>
-        <button class="nav-btn" data-target="video">
-            <img src = "assets/header_logo.jpg" class="fas fa-play-circle" id="d">
-        </button>
-        <button class="nav-btn" data-target="about">
-            <i class="fas fa-info-circle"></i> О нас
-        </button>
+        <div class="header-container">
+            <span class="time">РЕШАЙся</span>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Поиск видео...">
+            </div>
+            <div class="nav-buttons">
+                <button class="active" data-category="donm">#ДОНМ</button>
+                <button data-category="dvizhenie">#Движение первых</button>
+                <button data-category="love"><3</button>
+                <button data-category="techzone">#TechZone</button>
+                <button data-category="1542">#1542</button>
+            </div>
+        </div>
     </div>
 
-    <div id="video" class="content" style="display: block;">
-        <div class="catalog-title">Наши выпуски :) </div>
-        <h1>Видеоролики</h1>
+    <div id="video" class="content active" style="padding-top: 250px;">
+        <div class="video-grid" id="video-grid">
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="video-card" data-category="donm">
+                <img src="assets/header_logo.jpg" alt="Превью">
+                <div class="video-card-content">
+                    <h3>sdfsd</h3>
+                    <p>sdfsd</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="video-card" data-category="dvizhenie">
+                <img src="assets/header_logo.jpg" alt="Превью">
+                <div class="video-card-content">
+                    <h3>sfsdf</h3>
+                    <p>sdfsdfs</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="video-card" data-category="love">
+                <img src="assets/header_logo.jpg" alt="Превью">
+                <div class="video-card-content">
+                    <h3>1</h3>
+                    <p>ffffsdfsfsf</p>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div id="settings" class="content">
         <div class="settings-container">
             <h1>Настройки</h1>
-
-            <!-- Секция темы -->
             <div class="settings-section">
-                <h2>Тема:</h2>
+                <h2>Тема</h2>
                 <label>
-                    <input type="checkbox" id="theme-toggle" style="font-weight: bold;"> Темная тема
+                    <input type="checkbox" id="theme-toggle"> Темная тема
                 </label>
             </div>
-
-            <!-- Секция контактов -->
             <div class="settings-section">
-                <h2>Контакты:</h2>
+                <h2>Игры</h2>
+                <a href="https://unstar-studio.github.io/reshaysyaKombat/#" target="_blank" class="game-btn">
+                    <i class="fas fa-gamepad"></i> Решайся Kombat
+                </a>
+            </div>
+            <div class="settings-section">
+                <h2>Интересные ссылки)</h2>
                 <ul class="contacts">
-                    <li><i class="fab fa-youtube"></i> Мы в ютуб: <a href="https://www.youtube.com/@reshaysya" target="_blank">https://www.youtube.com/@reshaysya</a></li>
-                    <li><i class="fab fa-telegram"></i> Наш телеграмм канал: <a href="https://t.me/reshaysyaa" target="_blank">@reshaysyaa</a></li>
-                    <li><i class="fas fa-envelope"></i> Наш Email для связи: <a href=" emelyanovaa@sch1542.r">emelyanovaa@sch1542.r</a></li>
+                    <li><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@reshaysya" target="_blank">YouTube: @reshaysya</a></li>
+                    <li><i class="fab fa-telegram"></i> <a href="https://t.me/reshaysyaa" target="_blank">Telegram: @reshaysyaa</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:emelyanovaa@sch1542.r">Email: emelyanovaa@sch1542.r</a></li>
                 </ul>
+            </div>
+            <div class="creator-section">
+                <h2>Создатель<\></h2>
+                <p>UnStar Studio</p>
+                <a href="https://t.me/StarGamesOne" target="_blank">Telegramm: UnStar Studio</a>
             </div>
         </div>
     </div>
 
-    <div id="about" class="content">
-        <h1>«РЕШАЙся» — образовательный проект ГБОУ Школа №1542 для учеников, учителей и родителей. Подписывайся и решайся быть в команде профессионалов вместе с нами!</h1>
-        <p>РЕШАЙся ГБОУ №1542</p>
+    <div id="about" class="content" style="padding-top: 250px;">
+        <h1>О проекте «РЕШАЙся»</h1>
+        <p style="font-weight: bold;">«РЕШАЙся» — образовательный проект ГБОУ Школа №1542 для учеников, учителей и родителей. Подписывайся и решайся быть в команде профессионалов вместе с нами! :3</p>
     </div>
 
+    <div class="footer">
+        <button class="nav-btn" data-target="settings"><i class="fas fa-cog"></i></button>
+        <button class="nav-btn active" data-target="video"><img src="assets/header_logo.jpg" alt="Видео"></button>
+        <button class="nav-btn" data-target="about"><i class="fas fa-info-circle"></i></button>
+    </div>
 
-    <script src = script.js></script>
+    <script src = "script.js"></script>
 </body>
 </html>
